@@ -2,7 +2,7 @@ import os
 from dataclasses import dataclass
 
 import streamlit as st
-import streamlit_pydantic as sp
+# import streamlit_pydantic as sp
 from pydantic import BaseModel, Field
 import psycopg2
 from dotenv import load_dotenv
@@ -41,6 +41,7 @@ def prompt_form(prompt=Prompt("","")):
     with st.form(key="prompt_form", clear_on_submit=True):
         title = st.text_input("Title", value=prompt.title)
         prompt = st.text_area("Prompt", height=200, value=prompt.prompt)
+        
         submitted = st.form_submit_button("Submit")
         if submitted:
             return Prompt(title, prompt)
