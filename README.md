@@ -41,12 +41,12 @@ Closes the database connection after operations are complete.
 
 - Remember to install the pyperclip both via ```pip install``` and in ```requirements.txt```
 - Have a new learning about the "templete": use ``` { }``` to realize reuse of a established prompts, and the ```{ }``` can be auto recognized.
-- Not forget to set secret
-    ``` 
+- Not forget to set secret in streamlit
+    
     - Click the three dots, in “settings” you can find “secret”  
     - Basically copy the content of .env into the secrets section of streamlit cloud  
     - Adding “ “ around the url portion
-```
+
 
 ## Question
 - Why the popover can't be closed in streamlit?
